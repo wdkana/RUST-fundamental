@@ -3,14 +3,18 @@ struct Person {
     age: i32,
 }
 
+fn result(age: i32, age_type: &str, option: &str) {
+    println!("usia anda {} dan anda adalah {} {}", age, age_type, option)
+}
+
 fn calculate_age(person: Person, age: i32) {
     //* */ validating person age
     match person {
-        Person { age: 0..=3 } => println!("usia anda {} dan anda adalah balita 🤓", age),
-        Person { age: 4..=10 } => println!("usia anda {} dan anda adalah anak-anak 😋", age),
-        Person { age: 11..=18 } => println!("usia anda {} dan anda adalah remaja 😎", age),
-        Person { age: 19..=25 } => println!("usia anda {} dan anda adalah dewasa 😑", age),
-        _ => println!("usia anda {} dan anda adalah orang tua 😇", age),
+        Person { age: 0..=3 } => result(age, "balita", "🤓"),
+        Person { age: 4..=10 } => result(age, "anak-anak", "😋"),
+        Person { age: 11..=18 } => result(age, "remaja", "😎"),
+        Person { age: 19..=25 } => result(age, "dewasa", "😑"),
+        _ => result(age, "orang tua", "😇"),
     }
 }
 
