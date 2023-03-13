@@ -1,1 +1,2 @@
-day-1/target
+day-*/target
+day-*/.env

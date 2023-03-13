@@ -1,22 +1,22 @@
 use std::io;
 
-#[path = "./modules/utils/loader.rs"]
-mod loader;
-
-#[path = "./modules/utils/api.rs"]
+#[path = "./modules/api.rs"]
 mod api;
 #[path = "./modules/utils/console.rs"]
 mod console;
+#[path = "./modules/utils/loader.rs"]
+mod loader;
 
 #[derive(Debug)]
 struct Shorten {
     url: String,
 }
+
 fn main() {
     let input = io::stdin();
     let mut url = String::new();
 
-    println!("masukan url:");
+    console::log("masukan url:", "");
 
     input.read_line(&mut url).unwrap();
 
