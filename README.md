@@ -4,6 +4,6 @@ Repositori ini adalah proses pembelajaran gue untuk mendalami RUST Language (Pro
 <ul>
 <li>DAY 1 - Learning some basic structure of rustlang (done 😁)</li>
 <li>DAY 2 - Making a simple shorten url apps (done 😁)</li>
-<li>DAY 3 - Learning generic type (... 😴)</li>
+<li>DAY 3 - Learning generic type in depth (... 😴)</li>
 <li>DAY 4 - Learning memory management (... 😴)</li>
 </ul>
