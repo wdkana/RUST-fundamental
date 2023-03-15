@@ -16,7 +16,7 @@ fn main() {
     let input = io::stdin();
     let mut url = String::new();
 
-    console::log("masukan url:", "");
+    console::log("masukan url:", "👇");
 
     input.read_line(&mut url).unwrap();
 
